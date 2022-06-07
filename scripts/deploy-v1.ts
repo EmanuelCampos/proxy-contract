@@ -1,16 +1,16 @@
 import { ethers, upgrades } from 'hardhat';
 
+const PROXY = "0x8f4a1D57EBa05B0763419A881055F462B1C15711"
+
 async function main() {
-  const Box = await ethers.getContractFactory("Box");
+
   const BoxV1 = await ethers.getContractFactory("BoxV1");
 
-  const box = await upgrades.deployProxy(Box, [42], {
-    initializer: "initialize"
-  });
+  const box = await upgrades.upgradeProxy(PROXY, BoxV1);
 
   await box.deployed();
 
-  console.log("Box deployed to:" + box.address);
+  console.log("Boxv1 deployed to:" + box.address);
 }
 
 main()

@@ -1,4 +1,4 @@
-## ERC20 Staking
+## Proxy Contract
 
 1. install the packages.
 `yarn install`
