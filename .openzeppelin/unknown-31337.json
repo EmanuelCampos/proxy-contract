@@ -9,6 +9,11 @@
       "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
       "txHash": "0x1d067947c6c2b0e89a35f4fc60513f5026122f7941877365584bade656595bbc",
       "kind": "transparent"
+    },
+    {
+      "address": "0x2279B7A0a67DB372996a5FaB50D91eAA73d2eBe6",
+      "txHash": "0x99c1716e1ee4701cf655dad17aa2b86b8eff9f03eb66cc4eb51d32b6b878ba48",
+      "kind": "transparent"
     }
   ],
   "impls": {
@@ -62,6 +67,53 @@
     "6b5499751fa0e76015ddcf4690ed3e61008da46919531d4294f34314a2fb71c3": {
       "address": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
       "txHash": "0xf0a3bf944948f39387f47b80930360fd2529c7de105ba41e74e7dab9f7391389",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "x",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "Box",
+            "src": "contracts/Box.sol:7"
+          }
+        ],
+        "types": {
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "685e4e1d82135d724c022b0ed685afed6b3ee17058660388535f7f84173f254c": {
+      "address": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
+      "txHash": "0x00c31f561e478b19906bc1b08e7145bf36a19e5ba90ffa75fd041df7dcce64a9",
       "layout": {
         "storage": [
           {
